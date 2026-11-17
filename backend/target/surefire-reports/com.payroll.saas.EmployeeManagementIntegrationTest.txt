@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.payroll.saas.EmployeeManagementIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.195 s -- in com.payroll.saas.EmployeeManagementIntegrationTest

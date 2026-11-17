@@ -1,0 +1,7 @@
+com\payroll\saas\AuthIntegrationTest.class
+com\payroll\saas\SalaryManagementIntegrationTest.class
+com\payroll\saas\service\SalaryStructureMonetaryRangeTest.class
+com\payroll\saas\LeaveManagementIntegrationTest.class
+com\payroll\saas\AttendanceIntegrationTest.class
+com\payroll\saas\PayrollProcessingIntegrationTest.class
+com\payroll\saas\EmployeeManagementIntegrationTest.class

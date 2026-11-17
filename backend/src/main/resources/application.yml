@@ -1,0 +1,41 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 6MB
+  datasource:
+    url: jdbc:mysql://localhost:3306/payroll_saas
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+  application:
+    name: payroll-saas
+
+server:
+  port: 8080
+
+jwt:
+  secret: ${JWT_SECRET:payroll-saas-jwt-secret-key-2026-keep-safe-1234567890}
+  expiration-ms: 86400000
+
+app:
+  leave-document-dir: ${LEAVE_DOCUMENT_DIR:./private/leave-documents}
+  super-admin:
+    username: ${SUPER_ADMIN_USERNAME:superadmin}
+    email: ${SUPER_ADMIN_EMAIL:superadmin@payroll.local}
+    password: ${SUPER_ADMIN_PASSWORD:ChangeMe!StrongPass123}
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
